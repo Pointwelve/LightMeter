@@ -25,6 +25,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B7A613E19A4A14E00EAF802 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B6E622519A3837F00902E24 /* LightMeterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightMeterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6E622919A3837F00902E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +50,11 @@
 		1B6E623B19A3837F00902E24 /* LightMeterProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightMeterProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6E624019A3837F00902E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6E624119A3837F00902E24 /* LightMeterProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightMeterProjectTests.m; sourceTree = "<group>"; };
+		1B7A612E19A49E8300EAF802 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1B7A613019A49E8900EAF802 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1B7A613219A49E8F00EAF802 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1B7A613419A49E9400EAF802 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B7A613619A49E9900EAF802 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +78,11 @@
 		1B6E621C19A3837F00902E24 = {
 			isa = PBXGroup;
 			children = (
+				1B7A613619A49E9900EAF802 /* QuartzCore.framework */,
+				1B7A613419A49E9400EAF802 /* AVFoundation.framework */,
+				1B7A613219A49E8F00EAF802 /* OpenGLES.framework */,
+				1B7A613019A49E8900EAF802 /* CoreVideo.framework */,
+				1B7A612E19A49E8300EAF802 /* CoreMedia.framework */,
 				1B6E622719A3837F00902E24 /* LightMeterProject */,
 				1B6E623E19A3837F00902E24 /* LightMeterProjectTests */,
 				1B6E622619A3837F00902E24 /* Products */,
@@ -126,6 +148,7 @@
 				1B6E622119A3837F00902E24 /* Sources */,
 				1B6E622219A3837F00902E24 /* Frameworks */,
 				1B6E622319A3837F00902E24 /* Resources */,
+				1B7A613E19A4A14E00EAF802 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -333,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LightMeterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -344,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LightMeterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -402,6 +427,7 @@
 				1B6E624719A3837F00902E24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B6E624819A3837F00902E24 /* Build configuration list for PBXNativeTarget "LightMeterProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +436,7 @@
 				1B6E624A19A3837F00902E24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
